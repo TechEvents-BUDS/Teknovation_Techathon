@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        Dashboard
+    </header>
+
+    <div class="container">
+        <h2>Identify Dog Breed</h2>
+        <form id="image-form">
+            <div class="form-group">
+                <label for="dog-image">Upload an image of the dog:</label>
+                <input type="file" id="dog-image" accept="image/*">
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="identifyBreed()">Identify Breed</button>
+            </div>
+        </form>
+        <p id="breed-result" style="text-align:center; font-weight:bold;"></p>
+    </div>
+
+    <div class="container health-bot">
+        <div class="chat-window" id="chat-window">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Ask the health bot...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="app1.js"></script>
+</body>
+</html>
